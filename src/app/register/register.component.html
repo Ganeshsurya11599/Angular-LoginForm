@@ -1,0 +1,33 @@
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 medium-list">
+<div class="list-view">
+<div class="list-header">
+<h2 class="bounceOut">Register-Page</h2>
+</div>
+<form name="registerForm" #registerForm="ngForm" class="text-center" (ngSubmit)="onSubmit(registerForm.value)">
+<br>
+<div class="form-container bounceOut">
+<mat-form-field>
+<input id="name" matInput name="name" ngModel placeholder="Enter your name" required autocomplete="none">
+</mat-form-field>
+<br>
+<mat-form-field>
+<input id="email" matInput name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\_[a-z]{2,4}$" ngModel placeholder="Enter your email" required>
+</mat-form-field>
+<br>
+<mat-form-field>
+<input id="password" matInput name="password" ngModel placeholder="Enter your password" required>
+</mat-form-field>
+<br>
+<button type="submit" mat-raised-button class=" mat-primary">Register</button>
+<div>
+    <p class="divider">Already I have an account</p>
+        <button routerLink="/login" mat-mini-fab class="mat-warn">Login</button>
+</div>
+</div>
+</form> 
+</div>
+</div>
+</div>
+</div>

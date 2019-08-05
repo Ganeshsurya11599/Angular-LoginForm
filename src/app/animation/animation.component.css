@@ -1,0 +1,11 @@
+a:hover{
+	background-color: red;
+}
+.a1:hover{
+	background-color: transparent;
+	color: darkviolet;
+}
+button{
+    float: right;
+    margin-top: -45px;
+}
